@@ -7,8 +7,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
 
-error_log( '$attributes' . print_r($attributes , true ) ); //DEV_ONLY
-
 if ( empty( $attributes['posts'] ) && empty( $attributes['fallback'] ) ) {
 	// Not configured, nothing to display.
 	return '';
